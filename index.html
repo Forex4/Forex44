@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forex44 | MT4 Trading Bots</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<!-- HEADER -->
+<header class="header">
+  <h1>Forex44</h1>
+  <p>Automated MT4 Trading Bots</p>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Trade Smarter with Forex44</h2>
+  <p>Choose one trading pair. Get a <strong>14-Day Free Trial</strong> or subscribe monthly.</p>
+  <div class="buttons">
+    <a href="#" class="btn trial">Start Free 14-Day Trial</a>
+    <button class="btn pay" onclick="openModal()">Subscribe – $48 / Month</button>
+    <button class="btn buy" onclick="openModal()">Buy Lifetime Bot – $450</button>
+  </div>
+</section>
+
+<!-- PAIRS -->
+<section class="section">
+  <h3>Available Trading Bots (MT4)</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>EURUSD Bot</h4>
+      <p>Minimum funding: <strong>$100</strong></p>
+    </div>
+    <div class="card">
+      <h4>XAUUSD Bot</h4>
+      <p>Minimum funding: <strong>$100</strong> (Recommended $250+)</p>
+    </div>
+  </div>
+</section>
+
+<!-- FREE TRIAL -->
+<section class="section dark">
+  <h3>14-Day Free Trial</h3>
+  <p>Test Forex44 risk-free for 14 days on one trading pair before subscribing.</p>
+  <p><strong>Minimum funding of $100 applies.</strong></p>
+  <a href="#" class="btn trial">Start Free Trial</a>
+</section>
+
+<!-- PRICING -->
+<section class="section">
+  <h3>Pricing</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Monthly Subscription</h4>
+      <p>$48 / month</p>
+      <p>One trading pair (EURUSD or XAUUSD)</p>
+      <button class="btn pay" onclick="openModal()">Subscribe</button>
+    </div>
+    <div class="card">
+      <h4>Lifetime Access</h4>
+      <p>$450 (one-time)</p>
+      <p>One trading pair</p>
+      <button class="btn buy" onclick="openModal()">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<section class="section dark">
+  <p class="small">
+    ⚠️ Forex trading involves risk. This is not financial advice.
+    Minimum trading capital required is <strong>$100</strong>.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Forex44</p>
+  <a href="funding.html">Minimum Funding Requirements</a>
+</footer>
+
+<!-- FUNDING MODAL -->
+<div id="fundingModal" class="modal">
+  <div class="modal-content">
+    <h3>Important Funding Notice</h3>
+    <p>
+      Minimum funding required is <strong>$100</strong>.<br>
+      XAUUSD performs best with <strong>$250 or more</strong>.
+    </p>
+    <p>
+      By continuing, you confirm your account meets this requirement.
+    </p>
+
+    <!-- PAYSTACK LINKS (REPLACE WITH YOUR LINKS) -->
+    <a href="https://paystack.com/pay/YOUR_SUBSCRIPTION_LINK" class="btn pay">
+      I Understand – Continue to Payment
+    </a>
+    <button class="btn cancel" onclick="closeModal()">Cancel</button>
+
+    <p class="small">
+      After payment, your Forex44 MT4 bot and setup instructions
+      will be sent to your email within 24 hours.
+    </p>
+  </div>
+</div>
+
+<script src="js/modal.js"></script>
+</body>
+      </html>
