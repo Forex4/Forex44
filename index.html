@@ -5,6 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Forex44 | MT4 Trading Bots</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Floating buttons */
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .floating-buttons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #25D366; /* WhatsApp green */
+      border-radius: 50%;
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+    }
+    .floating-buttons a.telegram {
+      background-color: #0088cc;
+    }
+  </style>
 </head>
 <body>
 
@@ -17,11 +44,24 @@
 <!-- HERO -->
 <section class="hero">
   <h2>Trade Smarter with Forex44</h2>
-  <p>Choose one trading pair. Get a <strong>14-Day Free Trial</strong> or subscribe monthly.</p>
+  <p>Choose one trading pair. Start a <strong>14-Day Free Trial</strong> or subscribe/buy now.</p>
   <div class="buttons">
-    <a href="#" class="btn trial">Start Free 14-Day Trial</a>
-    <button class="btn pay" onclick="openModal()">Subscribe – $48 / Month</button>
-    <button class="btn buy" onclick="openModal()">Buy Lifetime Bot – $450</button>
+    <a 
+      href="https://wa.me/234XXXXXXXXXX?text=Hello%20Forex44%20Team,%0A%0AI%20would%20like%20to%20start%20the%2014-day%20free%20trial.%0A%0AI%20would%20like%20to%20choose%20my%20trading%20pair%20(EURUSD%20or%20XAUUSD).%0A%0APlease%20guide%20me%20on%20the%20next%20steps.%0A%0AThank%20you."
+      class="btn trial"
+      target="_blank"
+    >
+      Start Free 14-Day Trial (WhatsApp)
+    </a>
+    <a
+      href="https://t.me/YOUR_TELEGRAM_USERNAME?text=Hello%20Forex44%20Team,%0A%0AI%20would%20like%20to%20start%20the%2014-day%20free%20trial.%0A%0AI%20would%20like%20to%20choose%20my%20trading%20pair%20(EURUSD%20or%20XAUUSD).%0A%0APlease%20guide%20me%20on%20the%20next%20steps.%0A%0AThank%20you."
+      class="btn trial"
+      target="_blank"
+    >
+      Start Free 14-Day Trial (Telegram)
+    </a>
+    <button class="btn pay" onclick="openModal()">Subscribe – $48 USD / Month</button>
+    <button class="btn buy" onclick="openModal()">Buy Lifetime Bot – $450 USD</button>
   </div>
 </section>
 
@@ -43,9 +83,8 @@
 <!-- FREE TRIAL -->
 <section class="section dark">
   <h3>14-Day Free Trial</h3>
-  <p>Test Forex44 risk-free for 14 days on one trading pair before subscribing.</p>
+  <p>Test Forex44 risk-free for 14 days on one trading pair before subscribing or purchasing.</p>
   <p><strong>Minimum funding of $100 applies.</strong></p>
-  <a href="#" class="btn trial">Start Free Trial</a>
 </section>
 
 <!-- PRICING -->
@@ -54,13 +93,13 @@
   <div class="cards">
     <div class="card">
       <h4>Monthly Subscription</h4>
-      <p>$48 / month</p>
+      <p>$48 USD / month</p>
       <p>One trading pair (EURUSD or XAUUSD)</p>
       <button class="btn pay" onclick="openModal()">Subscribe</button>
     </div>
     <div class="card">
       <h4>Lifetime Access</h4>
-      <p>$450 (one-time)</p>
+      <p>$450 USD (one-time)</p>
       <p>One trading pair</p>
       <button class="btn buy" onclick="openModal()">Buy Now</button>
     </div>
@@ -70,7 +109,7 @@
 <!-- DISCLAIMER -->
 <section class="section dark">
   <p class="small">
-    ⚠️ Forex trading involves risk. This is not financial advice.
+    ⚠️ Forex trading involves risk. This is not financial advice.  
     Minimum trading capital required is <strong>$100</strong>.
   </p>
 </section>
@@ -93,19 +132,30 @@
       By continuing, you confirm your account meets this requirement.
     </p>
 
-    <!-- PAYSTACK LINKS (REPLACE WITH YOUR LINKS) -->
-    <a href="https://paystack.com/pay/YOUR_SUBSCRIPTION_LINK" class="btn pay">
-      I Understand – Continue to Payment
+    <a href="https://paystack.shop/pay/2yci7ad3eh" class="btn pay">
+      I Understand – Subscribe $48 USD / Month
+    </a>
+    <a href="https://paystack.shop/pay/6-omyxx9mk" class="btn buy">
+      I Understand – Buy Lifetime Bot $450 USD
     </a>
     <button class="btn cancel" onclick="closeModal()">Cancel</button>
 
     <p class="small">
-      After payment, your Forex44 MT4 bot and setup instructions
-      will be sent to your email within 24 hours.
+      After payment, your Forex44 MT4 bot and setup instructions will be sent to your email within 24 hours.
     </p>
   </div>
 </div>
 
+<!-- FLOATING BUTTONS -->
+<div class="floating-buttons">
+  <a href="https://wa.me/234XXXXXXXXXX" target="_blank" title="Chat on WhatsApp">
+    🟢
+  </a>
+  <a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank" class="telegram" title="Chat on Telegram">
+    ✈️
+  </a>
+</div>
+
 <script src="js/modal.js"></script>
 </body>
-      </html>
+    </html>
